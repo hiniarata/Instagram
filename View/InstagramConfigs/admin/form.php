@@ -40,11 +40,6 @@
 <!-- button -->
 <div class="submit">
   <?php echo $this->BcForm->submit('保存', array('div' => false, 'class' => 'button', 'id' => 'BtnSave')) ?>
-  <?php if (!empty($setting)): ?>
-    <?php
-    $this->BcBaser->link('初期化', array('action' => 'delete', $this->BcForm->value('InstagramConfig.id')), array('class' => 'button'), sprintf('本当に初期化してもいいですか？'), false);
-    ?>
-  <?php endif ?>
 </div>
 
 <?php echo $this->BcForm->end() ?>

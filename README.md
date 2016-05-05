@@ -12,6 +12,7 @@ baserCMS 3.0.9
 License
 -------
 Lincensed under the MIT lincense since version 2.0
+
 Copyright 2016 Hiniarata Co., Ltd. <https://hiniarata.jp/>
 
 -
