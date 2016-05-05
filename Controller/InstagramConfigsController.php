@@ -33,7 +33,7 @@ class InstagramConfigsController extends InstagramAppController
    * @var array
    * @access public
    */
-  public $components = array('BcAuth', 'Cookie', 'BcAuthConfigure');
+  public $components = array('BcAuth', 'Cookie', 'BcAuthConfigure', 'Security');
 
   /**
    * モデル
@@ -73,6 +73,9 @@ class InstagramConfigsController extends InstagramAppController
   public function beforeFilter()
   {
     parent::beforeFilter();
+    //CSRF対策（トークンの有効期限延長）
+    $this->Security->csrfCheck = true;
+    $this->Security->csrfExpires = '+1 hour';
   }
 
   /**
@@ -141,5 +144,5 @@ class InstagramConfigsController extends InstagramAppController
     $this->set('setting', $setting);
     $this->render('form');
   }
-  
+
 }
