@@ -4,6 +4,11 @@ Instagram
 簡易的な機能しか備えていませんが、MITライセンスで公開していますので、安心してカスタマイズして頂けます。
 
 
+Usage
+-------
+https://hiniarata.jp/news/archives/60
+
+
 System Requirements
 -------
 baserCMS 3.0.9
